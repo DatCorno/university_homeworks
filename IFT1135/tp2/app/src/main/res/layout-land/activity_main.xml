@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.udem.corneau.tp2.MainActivity">
+
+    <LinearLayout
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        android:layout_width="0dp"
+        android:layout_height="495dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/game"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tictactoe_game" />
+
+        <TextView
+            android:id="@+id/winner_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/play_button0"
+                    android:layout_height="wrap_content"
+                    android:onClick="playButtonClicked" />
+
+                <Button
+                    android:id="@+id/play_button1"
+                    android:layout_height="wrap_content"
+                    android:onClick="playButtonClicked" />
+
+                <Button
+                    android:id="@+id/play_button2"
+                    android:layout_height="wrap_content"
+                    android:onClick="playButtonClicked" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/play_button3"
+                    android:layout_height="wrap_content"
+                    android:onClick="playButtonClicked" />
+
+                <Button
+                    android:id="@+id/play_button4"
+                    android:layout_height="wrap_content"
+                    android:onClick="playButtonClicked" />
+
+                <Button
+                    android:id="@+id/play_button5"
+                    android:layout_height="wrap_content"
+                    android:onClick="playButtonClicked" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/play_button6"
+                    android:layout_height="wrap_content"
+                    android:onClick="playButtonClicked" />
+
+                <Button
+                    android:id="@+id/play_button7"
+                    android:layout_height="wrap_content"
+                    android:onClick="playButtonClicked" />
+
+                <Button
+                    android:id="@+id/play_button8"
+                    android:layout_height="wrap_content"
+                    android:onClick="playButtonClicked" />
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/new_game_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="newGameClicked"
+            android:text="@string/new_game_string" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,23 @@
+D:\A_Cours\C1175\Manuel\Module 2\TP2\TP2B\SourceTP2B\obj\Debug\MonTP2B.exe
+D:\A_Cours\C1175\Manuel\Module 2\TP2\TP2B\SourceTP2B\obj\Debug\MonTP2B.xml
+D:\A_Cours\C1175\Manuel\Module 2\TP2\TP2B\SourceTP2B\obj\Debug\MonTP2B.pdb
+D:\A_Cours\C1175\A08\Manuel\Module 2\TP2\TP2B\SourceTP2B\obj\Debug\MonTP2B.exe
+D:\A_Cours\C1175\A08\Manuel\Module 2\TP2\TP2B\SourceTP2B\obj\Debug\MonTP2B.xml
+D:\A_Cours\C1175\A08\Manuel\Module 2\TP2\TP2B\SourceTP2B\obj\Debug\MonTP2B.pdb
+F:\FF\Module_2\Fichiers\TP2B\SourceTP2B\obj\Debug\MonTP2B.exe
+F:\FF\Module_2\Fichiers\TP2B\SourceTP2B\obj\Debug\MonTP2B.xml
+F:\FF\Module_2\Fichiers\TP2B\SourceTP2B\obj\Debug\MonTP2B.pdb
+C:\Users\reid\Desktop\IFT1175\TP2\TP2B\SourceTP2B\obj\Debug\MonTP2B.exe
+C:\Users\reid\Desktop\IFT1175\TP2\TP2B\SourceTP2B\obj\Debug\MonTP2B.xml
+C:\Users\reid\Desktop\IFT1175\TP2\TP2B\SourceTP2B\obj\Debug\MonTP2B.pdb
+C:\msys64\home\XPS\Université\Visual Basic\TP2\TP2B\SourceTP2B\bin\MonTP2B.exe
+C:\msys64\home\XPS\Université\Visual Basic\TP2\TP2B\SourceTP2B\bin\MonTP2B.pdb
+C:\msys64\home\XPS\Université\Visual Basic\TP2\TP2B\SourceTP2B\bin\MonTP2B.xml
+C:\msys64\home\XPS\Université\Visual Basic\TP2\TP2B\SourceTP2B\obj\Debug\MonTP2B.vbprojResolveAssemblyReference.cache
+C:\msys64\home\XPS\Université\Visual Basic\TP2\TP2B\SourceTP2B\obj\Debug\ExTP2B.Form1.resources
+C:\msys64\home\XPS\Université\Visual Basic\TP2\TP2B\SourceTP2B\obj\Debug\ExTP2B.FormPlus.resources
+C:\msys64\home\XPS\Université\Visual Basic\TP2\TP2B\SourceTP2B\obj\Debug\MonTP2B.vbproj.GenerateResource.Cache
+C:\msys64\home\XPS\Université\Visual Basic\TP2\TP2B\SourceTP2B\obj\Debug\MonTP2B.vbproj.CoreCompileInputs.cache
+C:\msys64\home\XPS\Université\Visual Basic\TP2\TP2B\SourceTP2B\obj\Debug\MonTP2B.exe
+C:\msys64\home\XPS\Université\Visual Basic\TP2\TP2B\SourceTP2B\obj\Debug\MonTP2B.xml
+C:\msys64\home\XPS\Université\Visual Basic\TP2\TP2B\SourceTP2B\obj\Debug\MonTP2B.pdb

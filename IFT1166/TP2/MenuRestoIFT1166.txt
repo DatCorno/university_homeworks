@@ -1,0 +1,14 @@
+Oeuf
+3.45
+Muffin
+1.99
+Pain grillé
+2.99
+Fruits
+3.49
+Céréales
+1.69
+Café
+1.50
+Thé
+1.75

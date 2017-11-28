@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Devoir 3 corneauf</string>
+    <string name="connection_name">Nom</string>
+    <string name="connection_button">Connexion</string>
+</resources>

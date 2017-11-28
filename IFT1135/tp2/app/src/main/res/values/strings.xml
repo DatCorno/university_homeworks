@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Tic Tac Toe for IFT1135</string>
+    <string name="tictactoe_game">Tic Tac Toe</string>
+    <string name="winner_text"> wins!</string>
+    <string name="tie_game">It's a tie</string>
+    <string name="new_game_string">New game</string>
+</resources>

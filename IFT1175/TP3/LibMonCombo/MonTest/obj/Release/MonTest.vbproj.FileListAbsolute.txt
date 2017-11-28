@@ -1,0 +1,15 @@
+C:\Users\XPS\source\repos\LibMonCombo\MonTest\bin\Release\MonTest.exe.config
+C:\Users\XPS\source\repos\LibMonCombo\MonTest\bin\Release\MonTest.exe
+C:\Users\XPS\source\repos\LibMonCombo\MonTest\bin\Release\MonTest.pdb
+C:\Users\XPS\source\repos\LibMonCombo\MonTest\bin\Release\MonTest.xml
+C:\Users\XPS\source\repos\LibMonCombo\MonTest\bin\Release\LibMonCombo.dll
+C:\Users\XPS\source\repos\LibMonCombo\MonTest\bin\Release\LibMonCombo.pdb
+C:\Users\XPS\source\repos\LibMonCombo\MonTest\bin\Release\LibMonCombo.xml
+C:\Users\XPS\source\repos\LibMonCombo\MonTest\obj\Release\MonTest.vbprojResolveAssemblyReference.cache
+C:\Users\XPS\source\repos\LibMonCombo\MonTest\obj\Release\MonTest.Form1.resources
+C:\Users\XPS\source\repos\LibMonCombo\MonTest\obj\Release\MonTest.Resources.resources
+C:\Users\XPS\source\repos\LibMonCombo\MonTest\obj\Release\MonTest.vbproj.GenerateResource.Cache
+C:\Users\XPS\source\repos\LibMonCombo\MonTest\obj\Release\MonTest.vbproj.CoreCompileInputs.cache
+C:\Users\XPS\source\repos\LibMonCombo\MonTest\obj\Release\MonTest.exe
+C:\Users\XPS\source\repos\LibMonCombo\MonTest\obj\Release\MonTest.xml
+C:\Users\XPS\source\repos\LibMonCombo\MonTest\obj\Release\MonTest.pdb

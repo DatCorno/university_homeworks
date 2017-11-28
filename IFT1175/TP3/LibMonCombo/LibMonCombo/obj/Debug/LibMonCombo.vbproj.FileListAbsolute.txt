@@ -1,0 +1,11 @@
+C:\Users\XPS\source\repos\LibMonCombo\LibMonCombo\bin\Debug\LibMonCombo.dll
+C:\Users\XPS\source\repos\LibMonCombo\LibMonCombo\bin\Debug\LibMonCombo.pdb
+C:\Users\XPS\source\repos\LibMonCombo\LibMonCombo\bin\Debug\LibMonCombo.xml
+C:\Users\XPS\source\repos\LibMonCombo\LibMonCombo\obj\Debug\LibMonCombo.vbprojResolveAssemblyReference.cache
+C:\Users\XPS\source\repos\LibMonCombo\LibMonCombo\obj\Debug\LibMonCombo.Resources.resources
+C:\Users\XPS\source\repos\LibMonCombo\LibMonCombo\obj\Debug\LibMonCombo.Analyseur.resources
+C:\Users\XPS\source\repos\LibMonCombo\LibMonCombo\obj\Debug\LibMonCombo.vbproj.GenerateResource.Cache
+C:\Users\XPS\source\repos\LibMonCombo\LibMonCombo\obj\Debug\LibMonCombo.vbproj.CoreCompileInputs.cache
+C:\Users\XPS\source\repos\LibMonCombo\LibMonCombo\obj\Debug\LibMonCombo.dll
+C:\Users\XPS\source\repos\LibMonCombo\LibMonCombo\obj\Debug\LibMonCombo.xml
+C:\Users\XPS\source\repos\LibMonCombo\LibMonCombo\obj\Debug\LibMonCombo.pdb

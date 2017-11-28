@@ -1,0 +1,135 @@
+IFT 1175 - TP2A – Complément
+
+Voici les textes que vous pouvez «Copier/Coller» dans votre programme ... au bon endroit bien sûr.
+  7.	Me.Close() 
+  9.	Public X As Integer 
+  	Public Y As Integer
+	OU BIEN (IDENTIQUE)
+	Private m_VariableX As Integer
+	Private m_VariableY As Integer
+	Public Property X() As Integer
+        Get
+            X = m_VariableX  
+        End Get
+        Set 
+            m_VariableX = Value
+        End Set
+    	End Property
+    	Public Property Y() As Integer
+        Get
+            Y = m_VariableY
+        End Get
+        Set
+            m_VariableY = Value
+        End Set
+	End Property
+	
+  11.	Private varNumCercle As Integer
+	Private varCentre As New clsPoint
+	Private varRayon As Integer
+  12.	Public Property NumCercle() As Integer
+	    Get
+	        NumCercle = varNumCercle   ' ou bien Return varNumCercle   
+	    End Get
+	    Set(ByVal Value As Integer) 
+	        varNumCercle = Value
+	    End Set
+	End Property
+	Public Property Centre() As clsPoint
+	    Set(ByVal Value As clsPoint)
+	        varCentre = Value
+	    End Set
+	    Get
+	        Centre = varCentre
+	    End Get
+	End Property
+
+
+	Public WriteOnly Property Rayon() As Integer	
+	    Set(ByVal Value As Integer)
+	        If Value < 5 Then				'  Minimum 5 pixels
+	            varRayon = 5
+	        Else
+	            varRayon = Value
+	        End If
+	    End Set
+	End Property
+  13.	Public Sub Dessiner(ByVal MonObjet As Object)
+	    Dim g As Graphics
+	    g = MonObjet.CreateGraphics   ' On associe le graphique à la surface de la feuille
+	    g.DrawEllipse(Pens.Black, varCentre.X - varRayon, varCentre.Y - _ 
+		varRayon, 2 * varRayon, 2 * varRayon)
+	    g.Dispose()
+	End Sub
+  15.	Dim UnPoint As clsPoint
+	Dim MonCercle As clsCercle
+	UnPoint = New clsPoint
+      UnPoint.X = e.X
+      UnPoint.Y = e.Y
+      MonCercle = New clsCercle
+      MonCercle.Centre = UnPoint
+      MonCercle.Rayon = 10
+      MonCercle.Dessiner(Me)
+  21.	Public Sub Déplacer(ByRef MonObjet As Object)
+	  Effacer(MonObjet)
+        If varCentre.Y + varRayon < MonObjet.Size.Height - 35 Then
+            varCentre.Y = varCentre.Y + 1
+        End If
+        Dessiner(MonObjet)
+	End Sub
+  23.	Timer1.Enabled = True
+  24.	MonCercle.Déplacer(Me)
+  26.	Private varDepl As Integer       ' >0 : Descente; <0 : Montée
+  27.	Effacer(MonObjet)
+  	varCentre.Y = varCentre.Y + varDepl	   ' on déplace le centre du cercle
+  	If varCentre.Y >= MonObjet.Size.Height - varRayon – 35 Then ' on doit bondir
+	   varCentre.Y = MonObjet.Size.Height - varRayon – 35     ' on «ajuste» au sol 
+         If vardepl > 0 Then 
+		varDepl = - (vardepl -1) 'on remonte «un peu moins vite»
+	      End If
+      End If
+      Dessiner(MonObjet)
+
+29.	Public Event Choc()
+	
+	RaiseEvent Choc()
+
+30.	WithEvents
+
+32.   Static NbChocs As Integer = 0
+      NbChocs = NbChocs + 1
+	lblNbChocs.Text = "Nombre de chocs : " & NbChocs
+	    
+34.	Public Event Arret() ' Immobile si varDepl = 0 au moment du choc
+
+35.   If varDepl = 0 Then
+         RaiseEvent Arret()
+         Effacer(MonObjet)
+         Exit Sub
+      End If
+
+36.   Timer1.Enabled = False
+
+37.  	Dim NbCercles As Integer = 0
+    	Dim MaColl As New Collection	
+ 
+38.   NbCercles = NbCercles + 1
+      MonCercle.NumCercle = NbCercles
+      MaColl.Add(MonCercle, "C" & NbCercles)
+      lblNbBalles.Text = "Nombre de cercles : " & MaColl.Count()
+      MonCercle = Nothing
+	
+39.	Public Event Arret(ByVal Num As Integer)  
+	RaiseEvent Arret(varNumCercle)
+
+40.	MaColl.Remove("C" & Num)
+      lblNbBalles.Text = "Nombre de cercles : " & MaColl.Count()
+
+41.   For Each Un_Cercle As clsCercle In MaColl
+          MonCercle = Un_Cercle
+          MonCercle.Déplacer(Me)
+      Next ' Un_Cercle
+
+	
+
+

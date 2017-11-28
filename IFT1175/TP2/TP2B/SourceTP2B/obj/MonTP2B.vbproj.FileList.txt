@@ -1,0 +1,16 @@
+bin\MonTP2B.exe
+bin\MonTP2B.xml
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\ExTP2B.Form1.resources
+obj\Release\ExTP2B.FormPlus.resources
+obj\Release\MonTP2B.vbproj.GenerateResource.Cache
+obj\Release\MonTP2B.exe
+obj\Release\MonTP2B.xml
+bin\MonTP2B.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\ExTP2B.Form1.resources
+obj\Debug\ExTP2B.FormPlus.resources
+obj\Debug\MonTP2B.vbproj.GenerateResource.Cache
+obj\Debug\MonTP2B.exe
+obj\Debug\MonTP2B.xml
+obj\Debug\MonTP2B.pdb

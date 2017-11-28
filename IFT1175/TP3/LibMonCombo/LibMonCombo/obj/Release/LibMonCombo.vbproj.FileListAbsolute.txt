@@ -1,0 +1,10 @@
+C:\Users\XPS\source\repos\LibMonCombo\LibMonCombo\bin\Release\LibMonCombo.dll
+C:\Users\XPS\source\repos\LibMonCombo\LibMonCombo\bin\Release\LibMonCombo.pdb
+C:\Users\XPS\source\repos\LibMonCombo\LibMonCombo\bin\Release\LibMonCombo.xml
+C:\Users\XPS\source\repos\LibMonCombo\LibMonCombo\obj\Release\LibMonCombo.Resources.resources
+C:\Users\XPS\source\repos\LibMonCombo\LibMonCombo\obj\Release\LibMonCombo.Analyseur.resources
+C:\Users\XPS\source\repos\LibMonCombo\LibMonCombo\obj\Release\LibMonCombo.vbproj.GenerateResource.Cache
+C:\Users\XPS\source\repos\LibMonCombo\LibMonCombo\obj\Release\LibMonCombo.vbproj.CoreCompileInputs.cache
+C:\Users\XPS\source\repos\LibMonCombo\LibMonCombo\obj\Release\LibMonCombo.dll
+C:\Users\XPS\source\repos\LibMonCombo\LibMonCombo\obj\Release\LibMonCombo.xml
+C:\Users\XPS\source\repos\LibMonCombo\LibMonCombo\obj\Release\LibMonCombo.pdb
