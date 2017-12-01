@@ -1,3 +1,4 @@
+//François Corneau-Tremblay
 #ifndef RECTANGLE_HPP
 #define RECTANGLE_HPP
 

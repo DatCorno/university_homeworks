@@ -1,3 +1,4 @@
+//François Corneau-Tremblay
 #include "rectangle.hh"
 
 using std::cout;
