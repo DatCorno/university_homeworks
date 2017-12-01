@@ -6,6 +6,7 @@
 class rectangle {
 	public :
 		constexpr rectangle(double, double);
+		constexpr rectangle();
 	
 		void setDimension(double, double);
 	
@@ -14,17 +15,60 @@ class rectangle {
 		constexpr double surface() const;
 		constexpr double perimeter() const;
 	
-	/*
-		friend rectangle operator+(const rectangle&);
-		friend rectangle operator*(const rectangle&);
-		friend bool operator==(const rectangle&);
-		friend bool operator!=(const rectangle&);
-		friend std::ostream& operator<<(std::ostream&);
-		friend std::istream& operator>>(std::istream&);
+		rectangle& operator+=(const rectangle& rhs)
+		{
+			longueur += rhs.longueur;
+			largeur += rhs.largeur;
+			
+			return *this;
+		}
+
+		rectangle operator*=(const rectangle& rhs)
+		{
+			longueur *= rhs.longueur;
+			largeur *= rhs.largeur;
+
+			return *this;
+		}
+	
+		bool operator==(const rectangle& rhs)
+		{
+			return longueur == rhs.longueur && rhs.largeur == largeur;
+		}
 		
-		friend rectangle& operator++();
-		friend rectangle operator++();
-	*/
+		bool operator!=(const rectangle& rhs)
+		{
+			return !(*this == rhs);
+		}
+		
+		friend std::ostream& operator<<(std::ostream& out, const rectangle& rhs)
+		{
+			out << "Longueur : " << rhs.longueur << ", largeur : " << rhs.largeur << '\n';
+			
+			return out;
+		}
+		
+		friend std::istream& operator>>(std::istream& in, rectangle& rhs)
+		{
+			in >> rhs.longueur >> rhs.largeur;
+			return in;
+		}
+		
+		rectangle& operator++()
+		{
+			longueur += 1.0;
+			largeur += 1.0;
+			
+			return *this;
+		}
+		
+		rectangle operator++(int)
+		{
+			rectangle tmp(*this);
+			operator++();
+			return tmp;
+		}
+	
 	private :
 	
 		double longueur;
