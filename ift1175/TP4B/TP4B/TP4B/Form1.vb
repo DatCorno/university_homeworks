@@ -1,4 +1,5 @@
-﻿Imports System.Data.OleDb
+﻿'Author François Corneau-Tremblay
+Imports System.Data.OleDb
 
 Public Class Form1
 
