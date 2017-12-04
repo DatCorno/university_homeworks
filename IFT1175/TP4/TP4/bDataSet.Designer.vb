@@ -912,7 +912,8 @@ Namespace bDataSetTableAdapters
             Me._commandCollection = New Global.System.Data.OleDb.OleDbCommand(0) {}
             Me._commandCollection(0) = New Global.System.Data.OleDb.OleDbCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT Nom, code, [Note], Lettre FROM ListeEtudiants"
+            Me._commandCollection(0).CommandText = "SELECT Nom, code, [Note], Lettre"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM  ListeEtudiants"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"WHERE (Final >= 50) AND ("& _ 
+                "Intra < 50) OR"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"         (Final < 50) AND (Intra >= 50)"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
         End Sub
         

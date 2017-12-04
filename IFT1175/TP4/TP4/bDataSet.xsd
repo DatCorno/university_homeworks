@@ -37,7 +37,10 @@
                 </InsertCommand>
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>SELECT Nom, code, [Note], Lettre FROM ListeEtudiants</CommandText>
+                    <CommandText>SELECT Nom, code, [Note], Lettre
+FROM  ListeEtudiants
+WHERE (Final &gt;= 50) AND (Intra &lt; 50) OR
+         (Final &lt; 50) AND (Intra &gt;= 50)</CommandText>
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>
@@ -77,7 +80,7 @@
   <xs:element name="bDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="bDataSet" msprop:Generator_UserDSName="bDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="ListeEtudiants" msprop:Generator_TableClassName="ListeEtudiantsDataTable" msprop:Generator_TableVarName="tableListeEtudiants" msprop:Generator_TablePropName="ListeEtudiants" msprop:Generator_RowDeletingName="ListeEtudiantsRowDeleting" msprop:Generator_RowChangingName="ListeEtudiantsRowChanging" msprop:Generator_RowEvHandlerName="ListeEtudiantsRowChangeEventHandler" msprop:Generator_RowDeletedName="ListeEtudiantsRowDeleted" msprop:Generator_UserTableName="ListeEtudiants" msprop:Generator_RowChangedName="ListeEtudiantsRowChanged" msprop:Generator_RowEvArgName="ListeEtudiantsRowChangeEvent" msprop:Generator_RowClassName="ListeEtudiantsRow">
+        <xs:element name="ListeEtudiants" msprop:Generator_TableClassName="ListeEtudiantsDataTable" msprop:Generator_TableVarName="tableListeEtudiants" msprop:Generator_RowChangedName="ListeEtudiantsRowChanged" msprop:Generator_TablePropName="ListeEtudiants" msprop:Generator_RowDeletingName="ListeEtudiantsRowDeleting" msprop:Generator_RowChangingName="ListeEtudiantsRowChanging" msprop:Generator_RowEvHandlerName="ListeEtudiantsRowChangeEventHandler" msprop:Generator_RowDeletedName="ListeEtudiantsRowDeleted" msprop:Generator_RowClassName="ListeEtudiantsRow" msprop:Generator_UserTableName="ListeEtudiants" msprop:Generator_RowEvArgName="ListeEtudiantsRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Nom" msprop:Generator_ColumnVarNameInTable="columnNom" msprop:Generator_ColumnPropNameInRow="Nom" msprop:Generator_ColumnPropNameInTable="NomColumn" msprop:Generator_UserColumnName="Nom" minOccurs="0">
