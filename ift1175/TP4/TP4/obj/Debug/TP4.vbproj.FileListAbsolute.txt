@@ -1,0 +1,13 @@
+C:\msys64\home\XPS\university\university_homeworks\IFT1175\TP4\TP4\bin\Debug\b.mdb
+C:\msys64\home\XPS\university\university_homeworks\IFT1175\TP4\TP4\bin\Debug\TP4.exe.config
+C:\msys64\home\XPS\university\university_homeworks\IFT1175\TP4\TP4\bin\Debug\TP4.exe
+C:\msys64\home\XPS\university\university_homeworks\IFT1175\TP4\TP4\bin\Debug\TP4.pdb
+C:\msys64\home\XPS\university\university_homeworks\IFT1175\TP4\TP4\bin\Debug\TP4.xml
+C:\msys64\home\XPS\university\university_homeworks\IFT1175\TP4\TP4\obj\Debug\TP4.vbprojResolveAssemblyReference.cache
+C:\msys64\home\XPS\university\university_homeworks\IFT1175\TP4\TP4\obj\Debug\TP4.Form1.resources
+C:\msys64\home\XPS\university\university_homeworks\IFT1175\TP4\TP4\obj\Debug\TP4.Resources.resources
+C:\msys64\home\XPS\university\university_homeworks\IFT1175\TP4\TP4\obj\Debug\TP4.vbproj.GenerateResource.Cache
+C:\msys64\home\XPS\university\university_homeworks\IFT1175\TP4\TP4\obj\Debug\TP4.vbproj.CoreCompileInputs.cache
+C:\msys64\home\XPS\university\university_homeworks\IFT1175\TP4\TP4\obj\Debug\TP4.exe
+C:\msys64\home\XPS\university\university_homeworks\IFT1175\TP4\TP4\obj\Debug\TP4.xml
+C:\msys64\home\XPS\university\university_homeworks\IFT1175\TP4\TP4\obj\Debug\TP4.pdb
