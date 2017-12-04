@@ -3,7 +3,9 @@
 #define RECTANGLE_HPP
 
 #include <iostream>
-
+//The constexpr here are not really useful (no one is gonna use a rectangle's surface as the size of their array)
+//But in an effort to follow Ben Deane and Jason Turner's motto "constexpr everything" it is there
+//Link to talk : "https://www.youtube.com/watch?v=HMB9oXFobJc"
 class rectangle {
 	public :
 		constexpr rectangle(double, double);
