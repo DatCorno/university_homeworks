@@ -16,6 +16,7 @@ Public Class Form1
 		'With using statement the "Dispose" function of the given object is always call
 		'So we don't need to remember to close the connection once we're done
 		Using connection As New OleDbConnection(connection_string)
+			connection.Open()
 			'Create OleDb command and adapter to fill the DataTable
 			Dim command As New OleDbCommand(query, connection)
 			Dim data_adapter As New OleDbDataAdapter(command)
@@ -29,6 +30,10 @@ Public Class Form1
 		'If no rows have been selected from the database, show an error message then quit
 		If clients.Rows.Count = 0 Then
 			MessageBox.Show("Aucun enregistrement trouvé", "", MessageBoxButtons.OK, MessageBoxIcon.Error)
+			btnFirst.Enabled = False
+			btnLast.Enabled = False
+			btnNext.Enabled = False
+			btnPrevious.Enabled = False
 			Exit Sub
 		End If
 
@@ -47,7 +52,8 @@ Public Class Form1
 		Dim where_statement = ""
 		'This will collect the inputbox values
 		Dim chosen_sexe As String
-		Dim chosen_imc As String
+		Dim chosen_lower_imc As String
+		Dim chosen_upper_imc As String
 
 		chosen_sexe = InputBox("Choisir le sexe : ")
 
@@ -60,8 +66,22 @@ Public Class Form1
 		End If
 
 		Dim result As Double
-		chosen_imc = InputBox("Entrez l'imc souhaité")
-		If Not Double.TryParse(chosen_imc, result) Then
+		chosen_lower_imc = InputBox("Entrez l'imc minimum souhaité")
+		If Not Double.TryParse(chosen_lower_imc, result) Then
+			'If the imc is not parsable, we did not encountered a number
+			MessageBox.Show("Choix d'imc invalide, la valeur ne sera pas prise en compte", "", MessageBoxButtons.OK, MessageBoxIcon.Information)
+		Else
+			'If the where_statement is not empty, it means the user has entered a valid sexe and we now need to add an "AND" operator
+			If Not String.IsNullOrWhiteSpace(where_statement) Then
+				where_statement = where_statement + " AND "
+			End If
+
+			'Create the statement from the given input. The TryParse has taken care of the "." and "," validation for us
+			where_statement = where_statement + "imc>" + result.ToString()
+		End If
+
+		chosen_upper_imc = InputBox("Entrez l'imc maximum souhaité")
+		If Not Double.TryParse(chosen_upper_imc, result) Then
 			'If the imc is not parsable, we did not encountered a number
 			MessageBox.Show("Choix d'imc invalide, la valeur ne sera pas prise en compte", "", MessageBoxButtons.OK, MessageBoxIcon.Information)
 		Else

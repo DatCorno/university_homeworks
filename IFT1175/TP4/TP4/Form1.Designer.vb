@@ -38,9 +38,6 @@ Partial Class Form1
 		Me.BindingNavigatorMoveNextItem = New System.Windows.Forms.ToolStripButton()
 		Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton()
 		Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
-		Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
-		Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
-		Me.ListeEtudiantsBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
 		Me.ListeEtudiantsDataGridView = New System.Windows.Forms.DataGridView()
 		Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
 		Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -75,12 +72,12 @@ Partial Class Form1
 		'
 		'ListeEtudiantsBindingNavigator
 		'
-		Me.ListeEtudiantsBindingNavigator.AddNewItem = Me.BindingNavigatorAddNewItem
+		Me.ListeEtudiantsBindingNavigator.AddNewItem = Nothing
 		Me.ListeEtudiantsBindingNavigator.BindingSource = Me.ListeEtudiantsBindingSource
 		Me.ListeEtudiantsBindingNavigator.CountItem = Me.BindingNavigatorCountItem
-		Me.ListeEtudiantsBindingNavigator.DeleteItem = Me.BindingNavigatorDeleteItem
+		Me.ListeEtudiantsBindingNavigator.DeleteItem = Nothing
 		Me.ListeEtudiantsBindingNavigator.ImageScalingSize = New System.Drawing.Size(40, 40)
-		Me.ListeEtudiantsBindingNavigator.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BindingNavigatorMoveFirstItem, Me.BindingNavigatorMovePreviousItem, Me.BindingNavigatorSeparator, Me.BindingNavigatorPositionItem, Me.BindingNavigatorCountItem, Me.BindingNavigatorSeparator1, Me.BindingNavigatorMoveNextItem, Me.BindingNavigatorMoveLastItem, Me.BindingNavigatorSeparator2, Me.BindingNavigatorAddNewItem, Me.BindingNavigatorDeleteItem, Me.ListeEtudiantsBindingNavigatorSaveItem})
+		Me.ListeEtudiantsBindingNavigator.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BindingNavigatorMoveFirstItem, Me.BindingNavigatorMovePreviousItem, Me.BindingNavigatorSeparator, Me.BindingNavigatorPositionItem, Me.BindingNavigatorCountItem, Me.BindingNavigatorSeparator1, Me.BindingNavigatorMoveNextItem, Me.BindingNavigatorMoveLastItem, Me.BindingNavigatorSeparator2})
 		Me.ListeEtudiantsBindingNavigator.Location = New System.Drawing.Point(0, 0)
 		Me.ListeEtudiantsBindingNavigator.MoveFirstItem = Me.BindingNavigatorMoveFirstItem
 		Me.ListeEtudiantsBindingNavigator.MoveLastItem = Me.BindingNavigatorMoveLastItem
@@ -98,7 +95,7 @@ Partial Class Form1
 		Me.BindingNavigatorMoveFirstItem.Image = CType(resources.GetObject("BindingNavigatorMoveFirstItem.Image"), System.Drawing.Image)
 		Me.BindingNavigatorMoveFirstItem.Name = "BindingNavigatorMoveFirstItem"
 		Me.BindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = True
-		Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(44, 22)
+		Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(44, 44)
 		Me.BindingNavigatorMoveFirstItem.Text = "Move first"
 		'
 		'BindingNavigatorMovePreviousItem
@@ -113,7 +110,7 @@ Partial Class Form1
 		'BindingNavigatorSeparator
 		'
 		Me.BindingNavigatorSeparator.Name = "BindingNavigatorSeparator"
-		Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 6)
+		Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 47)
 		'
 		'BindingNavigatorPositionItem
 		'
@@ -127,14 +124,14 @@ Partial Class Form1
 		'BindingNavigatorCountItem
 		'
 		Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-		Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(87, 41)
+		Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(87, 44)
 		Me.BindingNavigatorCountItem.Text = "of {0}"
 		Me.BindingNavigatorCountItem.ToolTipText = "Total number of items"
 		'
 		'BindingNavigatorSeparator1
 		'
 		Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator"
-		Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 6)
+		Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 47)
 		'
 		'BindingNavigatorMoveNextItem
 		'
@@ -157,44 +154,20 @@ Partial Class Form1
 		'BindingNavigatorSeparator2
 		'
 		Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator"
-		Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 6)
-		'
-		'BindingNavigatorAddNewItem
-		'
-		Me.BindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-		Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
-		Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
-		Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
-		Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(44, 44)
-		Me.BindingNavigatorAddNewItem.Text = "Add new"
-		'
-		'BindingNavigatorDeleteItem
-		'
-		Me.BindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-		Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
-		Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
-		Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
-		Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(44, 44)
-		Me.BindingNavigatorDeleteItem.Text = "Delete"
-		'
-		'ListeEtudiantsBindingNavigatorSaveItem
-		'
-		Me.ListeEtudiantsBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-		Me.ListeEtudiantsBindingNavigatorSaveItem.Image = CType(resources.GetObject("ListeEtudiantsBindingNavigatorSaveItem.Image"), System.Drawing.Image)
-		Me.ListeEtudiantsBindingNavigatorSaveItem.Name = "ListeEtudiantsBindingNavigatorSaveItem"
-		Me.ListeEtudiantsBindingNavigatorSaveItem.Size = New System.Drawing.Size(23, 23)
-		Me.ListeEtudiantsBindingNavigatorSaveItem.Text = "Save Data"
+		Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 47)
 		'
 		'ListeEtudiantsDataGridView
 		'
 		Me.ListeEtudiantsDataGridView.AutoGenerateColumns = False
+		Me.ListeEtudiantsDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
 		Me.ListeEtudiantsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
 		Me.ListeEtudiantsDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4})
 		Me.ListeEtudiantsDataGridView.DataSource = Me.ListeEtudiantsBindingSource
+		Me.ListeEtudiantsDataGridView.Enabled = False
 		Me.ListeEtudiantsDataGridView.Location = New System.Drawing.Point(18, 86)
 		Me.ListeEtudiantsDataGridView.Name = "ListeEtudiantsDataGridView"
 		Me.ListeEtudiantsDataGridView.RowTemplate.Height = 40
-		Me.ListeEtudiantsDataGridView.Size = New System.Drawing.Size(862, 569)
+		Me.ListeEtudiantsDataGridView.Size = New System.Drawing.Size(385, 569)
 		Me.ListeEtudiantsDataGridView.TabIndex = 1
 		'
 		'DataGridViewTextBoxColumn1
@@ -202,24 +175,28 @@ Partial Class Form1
 		Me.DataGridViewTextBoxColumn1.DataPropertyName = "Nom"
 		Me.DataGridViewTextBoxColumn1.HeaderText = "Nom"
 		Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+		Me.DataGridViewTextBoxColumn1.Width = 128
 		'
 		'DataGridViewTextBoxColumn2
 		'
 		Me.DataGridViewTextBoxColumn2.DataPropertyName = "code"
 		Me.DataGridViewTextBoxColumn2.HeaderText = "code"
 		Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+		Me.DataGridViewTextBoxColumn2.Width = 131
 		'
 		'DataGridViewTextBoxColumn3
 		'
 		Me.DataGridViewTextBoxColumn3.DataPropertyName = "Note"
 		Me.DataGridViewTextBoxColumn3.HeaderText = "Note"
 		Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+		Me.DataGridViewTextBoxColumn3.Width = 129
 		'
 		'DataGridViewTextBoxColumn4
 		'
 		Me.DataGridViewTextBoxColumn4.DataPropertyName = "Lettre"
 		Me.DataGridViewTextBoxColumn4.HeaderText = "Lettre"
 		Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+		Me.DataGridViewTextBoxColumn4.Width = 142
 		'
 		'Form1
 		'
@@ -229,7 +206,7 @@ Partial Class Form1
 		Me.Controls.Add(Me.ListeEtudiantsDataGridView)
 		Me.Controls.Add(Me.ListeEtudiantsBindingNavigator)
 		Me.Name = "Form1"
-		Me.Text = "Form1"
+		Me.Text = "François Corneau-Tremblay"
 		CType(Me.BDataSet, System.ComponentModel.ISupportInitialize).EndInit()
 		CType(Me.ListeEtudiantsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
 		CType(Me.ListeEtudiantsBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
@@ -246,9 +223,7 @@ Partial Class Form1
 	Friend WithEvents ListeEtudiantsTableAdapter As bDataSetTableAdapters.ListeEtudiantsTableAdapter
 	Friend WithEvents TableAdapterManager As bDataSetTableAdapters.TableAdapterManager
 	Friend WithEvents ListeEtudiantsBindingNavigator As BindingNavigator
-	Friend WithEvents BindingNavigatorAddNewItem As ToolStripButton
 	Friend WithEvents BindingNavigatorCountItem As ToolStripLabel
-	Friend WithEvents BindingNavigatorDeleteItem As ToolStripButton
 	Friend WithEvents BindingNavigatorMoveFirstItem As ToolStripButton
 	Friend WithEvents BindingNavigatorMovePreviousItem As ToolStripButton
 	Friend WithEvents BindingNavigatorSeparator As ToolStripSeparator
@@ -257,7 +232,6 @@ Partial Class Form1
 	Friend WithEvents BindingNavigatorMoveNextItem As ToolStripButton
 	Friend WithEvents BindingNavigatorMoveLastItem As ToolStripButton
 	Friend WithEvents BindingNavigatorSeparator2 As ToolStripSeparator
-	Friend WithEvents ListeEtudiantsBindingNavigatorSaveItem As ToolStripButton
 	Friend WithEvents ListeEtudiantsDataGridView As DataGridView
 	Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
 	Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn

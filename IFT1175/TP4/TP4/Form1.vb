@@ -1,5 +1,5 @@
 ﻿Public Class Form1
-	Private Sub ListeEtudiantsBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs) Handles ListeEtudiantsBindingNavigatorSaveItem.Click
+	Private Sub ListeEtudiantsBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs) 
 		Me.Validate()
 		Me.ListeEtudiantsBindingSource.EndEdit()
 		Me.TableAdapterManager.UpdateAll(Me.BDataSet)
