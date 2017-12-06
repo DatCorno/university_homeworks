@@ -12,7 +12,7 @@
         android:orientation="vertical">
 
         <EditText
-            android:id="@+id/username_text"
+            android:id="@+id/username_text_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -20,16 +20,25 @@
             android:text="@string/connection_name" />
 
         <EditText
-            android:id="@+id/password_text"
+            android:id="@+id/password_text_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPassword" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/submit_button_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:onClick="submitButtonClick"
+            android:text="@string/submit_string" />
+
+        <TextView
+            android:id="@+id/grade_textview_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:visibility="invisible" />
+
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

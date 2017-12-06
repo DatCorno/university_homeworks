@@ -1,5 +1,16 @@
 <resources>
     <string name="app_name">Devoir 3 corneauf</string>
     <string name="connection_name">Nom</string>
-    <string name="connection_button">Connexion</string>
+    <string name="submit_string">Soumettre</string>
+    <string name="bad_password_string">Vous n\'êtes pas autorisé</string>
+    <string name="return_string">Retour</string>
+    <string name="choose_name">Choisissez un nom</string>
+
+    <string name="title_activity_bad_password">Mauvais mot de passe</string>
+    <string name="show_grade">Votre note totale est :&#032;</string>
+    <string name="points">&#032;points</string>
+    <string name="enter_grade">Entrez votre note (0-3)</string>
+    <string name="return_to_list">Retourner à la liste</string>
+    <string name="is_enrolled">L\'étudiant est inscrit en IFT1135</string>
+    <string name="is_not_enrolled">L\'étudiant n\'est pas inscrit en IFT1135</string>
 </resources>

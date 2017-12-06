@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.udem.corneau.devoir3corneauf.ViewClassmatesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name_textview_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/choosename_info_textview_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_name" />
+
+        <ListView
+            android:id="@+id/classmates_list_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        </ListView>
+
+        <Button
+            android:id="@+id/viewclassmates_back_button_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="viewClassmatesBackClick"
+            android:text="@string/return_string" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,5 +1,16 @@
 <resources>
     <string name="app_name">Homework 3 corneauf</string>
     <string name="connection_name">Name</string>
-    <string name="connection_button">Connect</string>
+    <string name="submit_string">Submit</string>
+
+    <string name="bad_password_string">You are not authorized</string>
+    <string name="return_string">Return</string>
+    <string name="title_activity_bad_password">Bad password</string>
+    <string name="choose_name">Choose a name</string>
+    <string name="show_grade">Your total grade is :&#032;</string>
+    <string name="points">&#032;points</string>
+    <string name="enter_grade">Enter your grade (0-3)</string>
+    <string name="return_to_list">Return to list</string>
+    <string name="is_enrolled">Student is enrolled in IFT1135</string>
+    <string name="is_not_enrolled">Student is not enrolled in IFT1135</string>
 </resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.udem.corneau.devoir3corneauf.ViewClassmateDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/student_imageview_id"
+
+            android:scaleType="fitXY"
+            app:srcCompat="@android:drawable/btn_star"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_alignParentTop="true"
+            />
+
+        <TextView
+            android:id="@+id/classmate_name_textview_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/classmate_permcode_textview_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/classmate_email_textview_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/is_classmate_enrolled_textview_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/enter_grade_textview_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/enter_grade" />
+
+            <EditText
+                android:id="@+id/classmate_grade_edittext_id"
+                android:layout_height="wrap_content"
+                android:layout_width="25dp"
+                android:layout_weight="0.25"
+                android:digits="0123"
+                android:ems="10"
+                android:maxLength="1"
+                android:inputType="number" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/return_to_list_button_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="returnToListClick"
+            android:text="@string/return_to_list" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

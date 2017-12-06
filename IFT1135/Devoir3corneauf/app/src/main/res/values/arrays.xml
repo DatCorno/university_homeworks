@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <string-array name="classmates_string_list">
+            <item>François Corneau-Tremblay</item>
+            <item>David-Alexandre Desrosiers</item>
+            <item>Jean-Simon Guilbert</item>
+        </string-array>
+
+    <string-array name="classmates_id_string_list">
+        <item>francois_corneau_tremblay</item>
+        <item>david_alexandre_desrosiers</item>
+        <item>jean_simon_guilbert</item>
+    </string-array>
+
+    <string-array name="francois_corneau_tremblay">
+        <item>p1173803</item>
+        <item>corneau90@gmail.com</item>
+        <item>true</item>
+    </string-array>
+
+    <string-array name="david_alexandre_desrosiers">
+        <item>p1215111</item>
+        <item>d.a.desrosiers@gmail.com</item>
+        <item>false</item>
+    </string-array>
+
+    <string-array name="jean_simon_guilbert">
+        <item>p9384423</item>
+        <item>jean-simon.guilbert@gmail.com</item>
+        <item>false</item>
+    </string-array>
+</resources>
