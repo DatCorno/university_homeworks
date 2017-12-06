@@ -22,22 +22,28 @@ public class ViewClassmateDetailsActivity extends AppCompatActivity {
 
 	private String[] student_data;
 	private String student_name;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_view_classmate_details);
 
-		position = getIntent().getIntExtra("position", 0);
-		student_id = getResources().getStringArray(R.array.classmates_id_string_list)[position];
-		student_name = getResources().getStringArray(R.array.classmates_string_list)[position];
+		position = getIntent().getIntExtra("position", 0); //Extract the position of the student we want to look up
+
+		student_id = getResources().getStringArray(R.array.classmates_id_string_list)[position]; //Get the student's id inside the array dedicated to listing students' idi
+		student_name = getResources().getStringArray(R.array.classmates_string_list)[position]; //Using the position, recover the name of the student from the list feeding the ListView
+
+		//Find the list id corresponding to the student's id then load that list inside our array of student data
 		student_data = getResources().getStringArray(getResources().getIdentifier(student_id, "array", getPackageName()));
 
+		//Update the ImageView by first getting the id of the drawable linked with this student's id then setting the ImageView resource to that id
 		((ImageView)findViewById(R.id.student_imageview_id)).setImageResource(getResources().getIdentifier(student_id, "drawable", getPackageName()));
 
 		setTextViewValues();
 	}
 
 	private void setTextViewValues() {
+		//In order we set : name from onCreate; email and permanent code from our student data
 		TextView name = findViewById(R.id.classmate_name_textview_id);
 		name.setText(student_name);
 		TextView perm_code = findViewById(R.id.classmate_permcode_textview_id);
@@ -47,6 +53,8 @@ public class ViewClassmateDetailsActivity extends AppCompatActivity {
 
 		String enrolled = "";
 
+		//Since the array can only store string we check if the boolean value equals its string counterpart
+		//and we load the correct string to display regarding the student status
 		if(student_data[2].equals("true"))
 			enrolled = getResources().getString(R.string.is_enrolled);
 		else
@@ -63,6 +71,7 @@ public class ViewClassmateDetailsActivity extends AppCompatActivity {
 
 		String grade = ((EditText)findViewById(R.id.classmate_grade_edittext_id)).getText().toString();
 
+		//If no grade was put we need to make sure to not parse a null or empty value
 		if(grade.isEmpty())
 			grade = "0";
 

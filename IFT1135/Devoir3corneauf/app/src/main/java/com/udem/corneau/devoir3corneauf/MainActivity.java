@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
 	}
 
 	private void createSharedPreferences() {
+		//Save the password inside the shared preferences
 		sharedPreferences = getSharedPreferences("Settings", Context.MODE_PRIVATE);
 		SharedPreferences.Editor editor = sharedPreferences.edit();
 		editor.putString("password", "12345");
@@ -36,14 +37,16 @@ public class MainActivity extends AppCompatActivity {
 	public void submitButtonClick(View view){
 		String password = ((TextView)findViewById(R.id.password_text_id)).getText().toString();
 
+		//Get password, and open BadPasswordActivity if the user input is not valid
 		if(!sharedPreferences.getString("password", "").equals(password)) {
 			Intent intent = new Intent(MainActivity.this, BadPasswordActivity.class);
 			startActivity(intent);
 		}
 		else {
+			//Create an intent for the ViewClassmatesActivity and pass the name given as input for the new activity to use
 			Intent intent = new Intent(MainActivity.this, ViewClassmatesActivity.class);
 			String name = ((EditText)findViewById(R.id.username_text_id)).getText().toString();
-			intent.putExtra(ViewClassmatesActivity.NAME_TAG, name);
+			intent.putExtra(ViewClassmatesActivity.NAME_TAG, name); //Static variable inside ViewClassmatesActivity for ease too use
 			startActivityForResult(intent, ViewClassmatesActivity.GET_NOTE);
 		}
 	}
@@ -53,10 +56,13 @@ public class MainActivity extends AppCompatActivity {
 
 		if (requestCode == ViewClassmatesActivity.GET_NOTE) {
 			if(resultCode == Activity.RESULT_OK){
+				//Once we get the OK, get the grade extra which is suppose to contain the sum return from all three students
 				int grade = data.getIntExtra("grade", -1);
 
+				//Get the first part of the string, add the grade after converting the int to string then add the last part of the grade string
 				String grade_string = getResources().getString(R.string.show_grade) + Integer.toString(grade) + getResources().getString(R.string.points);
 
+				//Make grade textview visible again and set its text to the grade we defined
 				TextView grade_tv = (TextView)findViewById(R.id.grade_textview_id);
 				grade_tv.setText(grade_string);
 				grade_tv.setVisibility(View.VISIBLE);
